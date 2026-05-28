@@ -4,14 +4,79 @@
 
 /* Couleur principale du thème (orange) */
 :root {
-    --f7-theme-color: #05ca1c;
-    --f7-theme-color-rgb: 12, 232, 52;
-    --f7-theme-color-shade: #cf5009;
-    --f7-theme-color-tint: #f06a1e;
+  --f7-theme-color: rgb(254, 108, 144);
+  --f7-theme-color-rgb: 254, 108, 144;
+  --f7-theme-color-shade: #cf5009;
+  --f7-theme-color-tint: #f06a1e;
 }
 
 .page-content {
-    padding-bottom: 16px;
+  background-color: #260d34;
+}
+
+.navbar .navbar-bg {
+  background-color: #452459;
+}
+
+.navbar .title {
+  color: rgb(255, 255, 255);
+}
+
+.liste-taches .item-title {
+  color: rgb(255, 255, 255);
+}
+
+.custom-color {
+  color: rgb(208, 55, 145);
+  transition: scale 0.1s linear;
+}
+
+.custom-color:hover {
+  scale: 1.15;
+}
+
+#btn-ajouter {
+  margin: 0 16px 0 16px;
+  transition: scale 0.2s linear;
+}
+
+#btn-ajouter:hover {
+  scale: 1.03;
+  background-color: rgb(197, 86, 114);
+}
+
+/* Style mode dark */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --f7-theme-color: rgb(0, 166, 244);
+    --f7-theme-color-rgb: 0, 166, 244;
+  }
+  .page-content {
+    background-color: rgb(15, 20, 30);
+  }
+
+  .navbar .navbar-bg {
+    background-color: rgb(28, 32, 41);
+  }
+
+  .custom-color {
+    color: rgb(246, 51, 154);
+  }
+
+  #btn-ajouter {
+    margin: 0 16px 0 16px;
+    transition: scale 0.2s linear;
+  }
+
+  #btn-ajouter:hover {
+    scale: 1.03;
+    background-color: rgb(0, 134, 196);
+  }
+}
+
+.page-content {
+  padding-bottom: 16px;
 }
 
 /* SÉANCE 3 : ajouter ici le style de la tâche cochée (texte barré) */
