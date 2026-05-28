@@ -40,64 +40,8 @@
             -->
 
             <div class="list">
-              <ul>
-                <li class="item-content">
-                  <div class="item-media">
-                    <label class="checkbox">
-                      <input type="checkbox" />
-                      <i class="icon-checkbox"></i>
-                    </label>
-                  </div>
-                  <div class="item-inner">
-                    <div class="item-title">Réviser l'algorithmique</div>
-                  </div>
-                </li>
-                <li class="item-content">
-                  <div class="item-media">
-                    <label class="checkbox">
-                      <input type="checkbox" />
-                      <i class="icon-checkbox"></i>
-                    </label>
-                  </div>
-                  <div class="item-inner">
-                    <div class="item-title">Réviser JavaScript</div>
-                  </div>
-                </li>
-                <li class="item-content">
-                  <div class="item-media">
-                    <label class="checkbox">
-                      <input type="checkbox" />
-                      <i class="icon-checkbox"></i>
-                    </label>
-                  </div>
-                  <div class="item-inner">
-                    <div class="item-title">Réviser React et Java</div>
-                  </div>
-                </li>
-                <li class="item-content">
-                  <div class="item-media">
-                    <label class="checkbox">
-                      <input type="checkbox" />
-                      <i class="icon-checkbox"></i>
-                    </label>
-                  </div>
-                  <div class="item-inner">
-                    <div class="item-title">
-                      Préparer le cadeau pour la fête des mères
-                    </div>
-                  </div>
-                </li>
-                <li class="item-content">
-                  <div class="item-media">
-                    <label class="checkbox">
-                      <input type="checkbox" />
-                      <i class="icon-checkbox"></i>
-                    </label>
-                  </div>
-                  <div class="item-inner">
-                    <div class="item-title">Apprendre C, C# et C++</div>
-                  </div>
-                </li>
+              <ul class="liste-taches">
+                <!-- Affiche dynamiquement les taches du tableau dans app -->
               </ul>
             </div>
 
@@ -109,6 +53,27 @@
             ======================================================
             -->
 
+            <div class="list inset">
+              <ul>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-input-wrap">
+                      <input
+                        type="text"
+                        id="champ-tache"
+                        placeholder="Nouvelle tâche…"
+                      />
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="block">
+              <a href="#" class="button button-fill" id="btn-ajouter"
+                >Ajouter</a
+              >
+            </div>
+
             <!--  
                 ======================================================
                     SÉANCE 3 : cocher/décocher, compteur, filtres,
@@ -116,7 +81,7 @@
                 ====================================================== 
                 -->
             <div class="block">
-              <p class="text-color-gray">À compléter pendant les séances.</p>
+              <p class="text-color-white">À compléter pendant les séances.</p>
             </div>
           </div>
         </div>
