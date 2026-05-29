@@ -1,37 +1,20 @@
-<head>
-  <meta charset="utf-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover"
-  />
-  <meta name="theme-color" content="#e8590c" />
-  <title>Ma ToDo</title>
-
-  <!-- Framework7 (CSS) -->
-  <link rel="stylesheet" href="lib/framework7-bundle.min.css" />
-  <!-- Police d'icônes Framework7 -->
-  <link rel="stylesheet" href="lib/framework7-icons/css/framework7-icons.css" />
-  <!-- Styles de l'application -->
-  <link rel="stylesheet" href="css/app.css" />
-</head>
-
 <div class="page" data-name="taches">
   <!-- Barre de navigation (haut) -->
   <div class="navbar">
     <div class="navbar-bg"></div>
     <div class="navbar-inner">
-      <div class="title">Ma ToDo</div>
+      <div class="title">My ToDo</div>
     </div>
   </div>
 
   <!-- Barre d'onglets -->
-  <div class="toolbar tabbar toolbar-bottom ">
-    <div class="toolbar-inner ">
+  <div class="toolbar tabbar toolbar-bottom">
+    <div class="toolbar-inner">
       <a href="/" class="tab-link custom-tab">
         <span class="text-color-white">Accueil</span>
       </a>
       <a href="/taches/" class="tab-link tab-link-active custom-tab">
-        <span >Taches</span>
+        <span>Taches</span>
       </a>
     </div>
   </div>
@@ -63,14 +46,27 @@
     <div class="block">
       <a href="#" class="button button-fill" id="btn-ajouter">Ajouter</a>
     </div>
-
+    <div class="block">
+      <div class="segmented">
+        <button class="button filtre-btn button-active" data-filtre="toutes">
+          Toutes
+        </button>
+        <button class="button filtre-btn button-active" data-filtre="afaire">
+          A faire
+        </button>
+        <button class="button filtre-btn button-active" data-filtre="faites">
+          Faites
+        </button>
+      </div>
+    </div>
     <!-- 
-            ======================================================
-                SÉANCE 1 : afficher ici une liste de tâches EN DUR
-                (composant "list" avec des cases à cocher).
-            ======================================================
-            -->
+      ======================================================
+      SÉANCE 1 : afficher ici une liste de tâches EN DUR
+      (composant "list" avec des cases à cocher).
+      ======================================================
+      -->
 
+    <div class="block-title compteur"></div>
     <div class="list">
       <ul class="liste-taches">
         <!-- Affiche dynamiquement les taches du tableau dans app -->
@@ -83,8 +79,6 @@
                     puis sauvegarde avec localStorage.
                 ====================================================== 
                 -->
-    <div class="block">
-      <p class="text-color-white">À compléter pendant les séances.</p>
-    </div>
+    <div class="block"></div>
   </div>
 </div>
