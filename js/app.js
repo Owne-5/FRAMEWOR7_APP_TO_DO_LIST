@@ -9,7 +9,10 @@ var app = new Framework7({
   el: "#app",
   name: "MaToDo",
   theme: "auto",
+  routes: routes,
 });
+
+var mainView = app.views.create(".view-main", { url: "/" });
 
 // ------------------------------------------------------------
 //  SÉANCE 2 — déclarer le tableau des tâches, puis :
@@ -47,7 +50,9 @@ function afficherTache() {
   $$(".liste-taches").html(taches.map(ligneTache).join(""));
 }
 
-afficherTache(); // premier affichage
+$$(document).on("page:init", '.page[data-name="taches"]', function () {
+  afficherTache(); // premier affichage
+});
 
 // Ajout de la logique d'ajout via le bouton ajouter une taches
 
